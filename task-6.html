@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 6</title>
+    <link rel="stylesheet" href="./css/common.css" />
+    <style>
+      body {
+        background-color: #f6f6fe;
+      }
+      #controls {
+        display: flex;
+        gap: 16px;
+      }
+      input {
+        width: 150px;
+        height: 40px;
+        border-radius: 8px;
+      }
+      input + button {
+        background-color: #4e75ff;
+        width: 120px;
+        height: 40px;
+        border-radius: 8px;
+        border: none;
+        color: #ffffff;
+      }
+      button + button {
+        background-color: #ff4e4e;
+        width: 120px;
+        height: 40px;
+        border-radius: 8px;
+        border: none;
+        color: #ffffff;
+      }
+      #boxes {
+        padding-top: 32px;
+        display: flex;
+        gap: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <p><a href="./index.html">Go back</a></p>
+
+    <div id="controls">
+      <input type="number" min="1" max="100" step="1" />
+      <button type="button" data-create>Create</button>
+      <button type="button" data-destroy>Destroy</button>
+    </div>
+
+    <div id="boxes"></div>
+
+    <script src="./js/task-6.js" type="module"></script>
+  </body>
+</html>
