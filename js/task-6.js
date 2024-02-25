@@ -9,10 +9,10 @@ const buttonDestroy = document.querySelector("[data-destroy]");
 const textInput = document.querySelector("input");
 const boxes = document.querySelector("#boxes");
 
-let inputValue;
+
 
 function handleCreate() {
-  textInput.focus();
+  let inputValue;
   if (textInput.value > 0 && textInput.value < 101) {
     createBoxes(textInput.value);
     textInput.value = "";
@@ -23,9 +23,6 @@ function handleCreate() {
   
 buttonCreate.addEventListener("click", handleCreate);
 
-let boxsize;
-let newDiv;
-
 function handleDestroy() {
   textInput.value = "";
   boxes.innerHTML = "";
@@ -34,6 +31,8 @@ function handleDestroy() {
 buttonDestroy.addEventListener("click", handleDestroy);
 
 function createBoxes(amount) {
+  let boxsize;
+  let newDiv;
   boxes.innerHTML = "";
   boxsize = 30;
 
